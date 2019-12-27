@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "emerald-armor-justfatlard",
+  "version": "${version}",
+  "name": "Emerald Armor",
+  "description": "Adds armor made out of emerald",
+  "authors": [
+    "justfatlard"
+  ],
+  "contact": {
+    "homepage": "",
+    "sources": ""
+  },
+  "license": "MIT",
+  "icon": "icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "justfatlard.emerald_armor.EmeraldArmor"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.7.2",
+    "fabric": "*",
+    "minecraft": "1.15.x"
+  },
+  "suggests": {
+    "flamingo": "*"
+  }
+}
