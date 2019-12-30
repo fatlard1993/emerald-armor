@@ -2,5 +2,9 @@
   "item.emerald-armor-justfatlard.emerald_helmet": "Emerald Helmet",
   "item.emerald-armor-justfatlard.emerald_chestplate": "Emerald Chestplate",
   "item.emerald-armor-justfatlard.emerald_leggings": "Emerald Leggings",
-  "item.emerald-armor-justfatlard.emerald_boots": "Emerald Boots"
+  "item.emerald-armor-justfatlard.emerald_boots": "Emerald Boots",
+  "advancements.story.minecraft.obtain_emerald.title": "Livin' in a Villagers Paradise",
+  "advancements.story.minecraft.obtain_emerald.description": "Obtain an emerald",
+  "advancements.story.emerald-armor-justfatlard.craft_emerald_armor.title": "If I was blue I would die",
+  "advancements.story.emerald-armor-justfatlard.craft_emerald_armor.description": "Craft some emerald armor"
 }

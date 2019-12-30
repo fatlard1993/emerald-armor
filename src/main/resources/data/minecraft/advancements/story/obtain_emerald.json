@@ -1,0 +1,26 @@
+{
+  "parent": "minecraft:story/iron_tools",
+  "display": {
+    "icon": { "item": "minecraft:emerald" },
+    "title": {
+      "translate": "advancements.story.minecraft.obtain_emerald.title"
+    },
+    "description": {
+      "translate": "advancements.story.minecraft.obtain_emerald.description"
+    }
+  },
+  "criteria": {
+    "has_emerald": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": { "items": [{ "item": "minecraft:emerald" }] }
+    }
+  },
+  "rewards": {
+    "recipes": [
+      "emerald-armor-justfatlard:emerald_helmet",
+      "emerald-armor-justfatlard:emerald_chestplate",
+      "emerald-armor-justfatlard:emerald_leggings",
+      "emerald-armor-justfatlard:emerald_boots"
+    ]
+  }
+}

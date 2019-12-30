@@ -1,0 +1,18 @@
+{
+  "parent": "minecraft:story/obtain_emerald",
+  "display": {
+    "icon": { "item": "emerald-armor-justfatlard:emerald_chestplate" },
+    "title": {
+      "translate": "advancements.story.emerald-armor-justfatlard.craft_emerald_armor.title"
+    },
+    "description": {
+      "translate": "advancements.story.emerald-armor-justfatlard.craft_emerald_armor.description"
+    }
+  },
+  "criteria": {
+    "has_emerald_armor": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": { "items": [{ "tag": "emerald-armor-justfatlard:emerald_armor" }] }
+    }
+  }
+}
