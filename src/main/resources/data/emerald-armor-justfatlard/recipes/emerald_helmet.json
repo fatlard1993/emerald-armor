@@ -4,6 +4,6 @@
     "###",
     "# #"
   ],
-  "key": { "#": { "item": "minecraft:emerald" } },
+  "key": { "#": { "item": "minecraft:emerald_block" } },
   "result": { "item": "emerald-armor-justfatlard:emerald_helmet" }
 }
