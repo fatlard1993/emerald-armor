@@ -1,6 +1,5 @@
 package justfatlard.emerald_armor;
 
-import justfatlard.emerald_armor.EmeraldArmor;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.ItemGroup;
