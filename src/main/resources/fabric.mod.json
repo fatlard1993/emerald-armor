@@ -16,7 +16,7 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "justfatlard.emerald_armor.EmeraldArmor"
+      "justfatlard.emerald_armor.Main"
     ]
   },
   "depends": {
