@@ -19,7 +19,7 @@ public class EmeraldArmorMaterial implements ArmorMaterial {
 
 	@Override
 	public Ingredient getRepairIngredient() {
-		return Ingredient.ofItems(Items.EMERALD);
+		return Ingredient.ofItems(Items.EMERALD_BLOCK);
 	}
 
 	@Override

@@ -1,5 +1,5 @@
 {
-  "parent": "minecraft:story/obtain_emerald",
+  "parent": "minecraft:story/obtain_emerald_block",
   "display": {
     "icon": { "item": "emerald-armor-justfatlard:emerald_chestplate" },
     "title": {

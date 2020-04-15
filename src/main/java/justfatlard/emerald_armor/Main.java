@@ -5,7 +5,7 @@ import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
-public class EmeraldArmor implements ModInitializer {
+public class Main implements ModInitializer {
 	private final static String MOD_ID = "emerald-armor-justfatlard";
 
 	public final static EmeraldArmorMaterial EMERALD_ARMOR_MATERIAL = new EmeraldArmorMaterial();
