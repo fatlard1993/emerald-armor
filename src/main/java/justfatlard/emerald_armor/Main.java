@@ -2,6 +2,9 @@ package justfatlard.emerald_armor;
 
 import net.fabricmc.api.ModInitializer;
 import net.minecraft.entity.EquipmentSlot;
+import net.minecraft.item.ArmorItem;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
@@ -10,10 +13,10 @@ public class Main implements ModInitializer {
 
 	public final static EmeraldArmorMaterial EMERALD_ARMOR_MATERIAL = new EmeraldArmorMaterial();
 
-	public final static EmeraldArmorItem EMERALD_HELMET = new EmeraldArmorItem(EquipmentSlot.HEAD);
-	public final static EmeraldArmorItem EMERALD_CHESTPLATE = new EmeraldArmorItem(EquipmentSlot.CHEST);
-	public final static EmeraldArmorItem EMERALD_LEGGINGS = new EmeraldArmorItem(EquipmentSlot.LEGS);
-	public final static EmeraldArmorItem EMERALD_BOOTS = new EmeraldArmorItem(EquipmentSlot.FEET);
+	public final static ArmorItem EMERALD_HELMET = new ArmorItem(Main.EMERALD_ARMOR_MATERIAL, EquipmentSlot.HEAD, new Item.Settings().maxCount(1).group(ItemGroup.COMBAT));
+	public final static ArmorItem EMERALD_CHESTPLATE = new ArmorItem(Main.EMERALD_ARMOR_MATERIAL, EquipmentSlot.CHEST, new Item.Settings().maxCount(1).group(ItemGroup.COMBAT));
+	public final static ArmorItem EMERALD_LEGGINGS = new ArmorItem(Main.EMERALD_ARMOR_MATERIAL, EquipmentSlot.LEGS, new Item.Settings().maxCount(1).group(ItemGroup.COMBAT));
+	public final static ArmorItem EMERALD_BOOTS = new ArmorItem(Main.EMERALD_ARMOR_MATERIAL, EquipmentSlot.FEET, new Item.Settings().maxCount(1).group(ItemGroup.COMBAT));
 
 	@Override
 	public void onInitialize(){
