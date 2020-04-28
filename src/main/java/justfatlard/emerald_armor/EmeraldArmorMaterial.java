@@ -8,9 +8,9 @@ import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
 
 public class EmeraldArmorMaterial implements ArmorMaterial {
-	private final static int[] BASE_DURABILITY = new int[]{6, 7, 8, 5};
-	private final static int[] PROTECTION_AMOUNTS = new int[]{4, 7, 9, 2};
-	private final int durabilityMultiplier = 72;
+	private final static int[] BASE_DURABILITY = new int[]{6, 7, 8, 6};
+	private final static int[] PROTECTION_AMOUNTS = new int[]{4, 7, 9, 4};
+	private final int durabilityMultiplier = 84;
 
 	@Override
 	public int getDurability(EquipmentSlot slot){
