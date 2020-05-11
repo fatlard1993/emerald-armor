@@ -1,5 +1,8 @@
 # Emerald Armor
 
+[![CurseForge](http://cf.way2muchnoise.eu/full_emerald-armor_downloads.svg)](http://www.curseforge.com/minecraft/mc-mods/emerald-armor)
+[![CurseForge](http://cf.way2muchnoise.eu/versions/emerald-armor.svg)](http://www.curseforge.com/minecraft/mc-mods/emerald-armor)
+
 A [Minecraft](minecraft.net) mod built on [Fabric](fabricmc.net).
 
 This mod adds emerald armor, made from emerald blocks.
