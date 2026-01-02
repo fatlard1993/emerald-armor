@@ -17,8 +17,10 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
+import net.minecraft.item.ItemGroups;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
+import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 
 public class Main implements ModInitializer {
 	public static final String MOD_ID = "emerald-armor-justfatlard";
@@ -65,6 +67,7 @@ public class Main implements ModInitializer {
 	}
 
 	// Armor items using equippable() + attribute modifiers for Polymer compatibility
+	// Using leather armor as Polymer item to enable custom color rendering on player model
 	public static final Item EMERALD_HELMET = new EmeraldArmorItem(
 		EquipmentType.HELMET,
 		HELMET_DEFENSE,
@@ -73,8 +76,7 @@ public class Main implements ModInitializer {
 			.maxCount(1)
 			.maxDamage(EquipmentType.HELMET.getMaxDamage(BASE_DURABILITY))
 			.attributeModifiers(createArmorAttributes(HELMET_DEFENSE, ARMOR_TOUGHNESS, AttributeModifierSlot.HEAD)),
-		"emerald_helmet",
-		Items.DIAMOND_HELMET
+		Items.LEATHER_HELMET
 	);
 
 	public static final Item EMERALD_CHESTPLATE = new EmeraldArmorItem(
@@ -85,8 +87,7 @@ public class Main implements ModInitializer {
 			.maxCount(1)
 			.maxDamage(EquipmentType.CHESTPLATE.getMaxDamage(BASE_DURABILITY))
 			.attributeModifiers(createArmorAttributes(CHESTPLATE_DEFENSE, ARMOR_TOUGHNESS, AttributeModifierSlot.CHEST)),
-		"emerald_chestplate",
-		Items.DIAMOND_CHESTPLATE
+		Items.LEATHER_CHESTPLATE
 	);
 
 	public static final Item EMERALD_LEGGINGS = new EmeraldArmorItem(
@@ -97,8 +98,7 @@ public class Main implements ModInitializer {
 			.maxCount(1)
 			.maxDamage(EquipmentType.LEGGINGS.getMaxDamage(BASE_DURABILITY))
 			.attributeModifiers(createArmorAttributes(LEGGINGS_DEFENSE, ARMOR_TOUGHNESS, AttributeModifierSlot.LEGS)),
-		"emerald_leggings",
-		Items.DIAMOND_LEGGINGS
+		Items.LEATHER_LEGGINGS
 	);
 
 	public static final Item EMERALD_BOOTS = new EmeraldArmorItem(
@@ -109,8 +109,7 @@ public class Main implements ModInitializer {
 			.maxCount(1)
 			.maxDamage(EquipmentType.BOOTS.getMaxDamage(BASE_DURABILITY))
 			.attributeModifiers(createArmorAttributes(BOOTS_DEFENSE, ARMOR_TOUGHNESS, AttributeModifierSlot.FEET)),
-		"emerald_boots",
-		Items.DIAMOND_BOOTS
+		Items.LEATHER_BOOTS
 	);
 
 	@Override
@@ -137,6 +136,14 @@ public class Main implements ModInitializer {
 			})
 			.build();
 		PolymerItemGroupUtils.registerPolymerItemGroup(Identifier.of(MOD_ID, "emerald_armor"), emeraldArmorGroup);
+
+		// Add armor to vanilla Combat creative tab
+		ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT).register(entries -> {
+			entries.add(EMERALD_HELMET);
+			entries.add(EMERALD_CHESTPLATE);
+			entries.add(EMERALD_LEGGINGS);
+			entries.add(EMERALD_BOOTS);
+		});
 
 		System.out.println("[emerald-armor] Loaded emerald-armor (server-side with Polymer)");
 	}
