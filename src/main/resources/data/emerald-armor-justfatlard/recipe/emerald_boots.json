@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "# #",
+    "# #"
+  ],
+  "key": {
+    "#": "minecraft:emerald_block"
+  },
+  "result": {
+    "id": "emerald-armor-justfatlard:emerald_boots",
+    "count": 1
+  }
+}

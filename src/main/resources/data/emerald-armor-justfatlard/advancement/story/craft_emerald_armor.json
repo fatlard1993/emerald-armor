@@ -1,0 +1,16 @@
+{
+  "criteria": {
+    "has_emerald_block": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": { "items": [{ "items": "minecraft:emerald_block" }] }
+    }
+  },
+  "rewards": {
+    "recipes": [
+      "emerald-armor-justfatlard:emerald_helmet",
+      "emerald-armor-justfatlard:emerald_chestplate",
+      "emerald-armor-justfatlard:emerald_leggings",
+      "emerald-armor-justfatlard:emerald_boots"
+    ]
+  }
+}
