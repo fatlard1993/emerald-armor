@@ -20,10 +20,11 @@
     ]
   },
   "depends": {
-    "fabricloader": ">=${loader_version}",
+    "fabricloader": ">=0.18.1",
     "fabric-api": "*",
-    "minecraft": "${minecraft_version}",
-    "polymer-core": "*",
-    "polymer-resource-pack": "*"
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "polymer-core": ">=0.15.0",
+    "polymer-resource-pack": ">=0.15.0"
   }
 }
