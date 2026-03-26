@@ -17,6 +17,7 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
+import net.minecraft.registry.tag.TagKey;
 import net.minecraft.item.ItemGroups;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
@@ -36,6 +37,12 @@ public class Main implements ModInitializer {
 
 	// Armor toughness (same as diamond)
 	public static final double ARMOR_TOUGHNESS = 2.0;
+
+	// Enchantability
+	public static final int ENCHANTABILITY = 20;
+
+	// Repair material tag
+	private static final TagKey<Item> REPAIR_TAG = TagKey.of(RegistryKeys.ITEM, Identifier.of(MOD_ID, "emerald_armor_repair_items"));
 
 	// Helper method to create registry key
 	private static RegistryKey<Item> keyOf(String name) {
@@ -75,7 +82,9 @@ public class Main implements ModInitializer {
 			.registryKey(keyOf("emerald_helmet"))
 			.maxCount(1)
 			.maxDamage(EquipmentType.HELMET.getMaxDamage(BASE_DURABILITY))
-			.attributeModifiers(createArmorAttributes(HELMET_DEFENSE, ARMOR_TOUGHNESS, AttributeModifierSlot.HEAD)),
+			.attributeModifiers(createArmorAttributes(HELMET_DEFENSE, ARMOR_TOUGHNESS, AttributeModifierSlot.HEAD))
+			.enchantable(ENCHANTABILITY)
+			.repairable(REPAIR_TAG),
 		Items.LEATHER_HELMET
 	);
 
@@ -86,7 +95,9 @@ public class Main implements ModInitializer {
 			.registryKey(keyOf("emerald_chestplate"))
 			.maxCount(1)
 			.maxDamage(EquipmentType.CHESTPLATE.getMaxDamage(BASE_DURABILITY))
-			.attributeModifiers(createArmorAttributes(CHESTPLATE_DEFENSE, ARMOR_TOUGHNESS, AttributeModifierSlot.CHEST)),
+			.attributeModifiers(createArmorAttributes(CHESTPLATE_DEFENSE, ARMOR_TOUGHNESS, AttributeModifierSlot.CHEST))
+			.enchantable(ENCHANTABILITY)
+			.repairable(REPAIR_TAG),
 		Items.LEATHER_CHESTPLATE
 	);
 
@@ -97,7 +108,9 @@ public class Main implements ModInitializer {
 			.registryKey(keyOf("emerald_leggings"))
 			.maxCount(1)
 			.maxDamage(EquipmentType.LEGGINGS.getMaxDamage(BASE_DURABILITY))
-			.attributeModifiers(createArmorAttributes(LEGGINGS_DEFENSE, ARMOR_TOUGHNESS, AttributeModifierSlot.LEGS)),
+			.attributeModifiers(createArmorAttributes(LEGGINGS_DEFENSE, ARMOR_TOUGHNESS, AttributeModifierSlot.LEGS))
+			.enchantable(ENCHANTABILITY)
+			.repairable(REPAIR_TAG),
 		Items.LEATHER_LEGGINGS
 	);
 
@@ -108,7 +121,9 @@ public class Main implements ModInitializer {
 			.registryKey(keyOf("emerald_boots"))
 			.maxCount(1)
 			.maxDamage(EquipmentType.BOOTS.getMaxDamage(BASE_DURABILITY))
-			.attributeModifiers(createArmorAttributes(BOOTS_DEFENSE, ARMOR_TOUGHNESS, AttributeModifierSlot.FEET)),
+			.attributeModifiers(createArmorAttributes(BOOTS_DEFENSE, ARMOR_TOUGHNESS, AttributeModifierSlot.FEET))
+			.enchantable(ENCHANTABILITY)
+			.repairable(REPAIR_TAG),
 		Items.LEATHER_BOOTS
 	);
 
