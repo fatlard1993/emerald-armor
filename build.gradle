@@ -1,6 +1,5 @@
 plugins {
-	id 'fabric-loom' version '1.13-SNAPSHOT'
-	id 'maven-publish'
+	id 'net.fabricmc.fabric-loom' version '1.15.5'
 }
 
 version = project.mod_version
@@ -11,34 +10,17 @@ base {
 }
 
 repositories {
-	maven { url 'https://maven.nucleoid.xyz' }
 }
 
 loom {
-	splitEnvironmentSourceSets()
-
-	mods {
-		"emerald-armor-justfatlard" {
-			sourceSet sourceSets.main
-			sourceSet sourceSets.client
-		}
-	}
-}
-
-fabricApi {
-	configureDataGeneration()
 }
 
 dependencies {
 	minecraft "com.mojang:minecraft:${project.minecraft_version}"
-	mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
-	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
-	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
+	implementation "net.fabricmc:fabric-loader:${project.loader_version}"
+	implementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 
-	// Polymer
-	modImplementation include("eu.pb4:polymer-core:0.15.1+1.21.11")
-	modImplementation include("eu.pb4:polymer-resource-pack:0.15.1+1.21.11")
-	modImplementation include("eu.pb4:polymer-autohost:0.15.1+1.21.11")
+	implementation files("../pandorical/build/libs/pandorical-1.0.0.jar")
 }
 
 processResources {
@@ -54,36 +36,17 @@ processResources {
 	}
 }
 
-def targetJavaVersion = 21
 tasks.withType(JavaCompile).configureEach {
 	it.options.encoding = "UTF-8"
-	if (targetJavaVersion >= 10 || JavaVersion.current().isJava10Compatible()) {
-		it.options.release.set(targetJavaVersion)
-	}
+	it.options.release = 25
 }
 
 java {
-	def javaVersion = JavaVersion.toVersion(targetJavaVersion)
-	if (JavaVersion.current() < javaVersion) {
-		toolchain.languageVersion = JavaLanguageVersion.of(targetJavaVersion)
-	}
 	withSourcesJar()
 }
 
 jar {
 	from("LICENSE") {
 		rename { "${it}_${project.base.archivesName.get()}"}
-	}
-}
-
-publishing {
-	publications {
-		create("mavenJava", MavenPublication) {
-			artifactId = project.mod_id
-			from components.java
-		}
-	}
-
-	repositories {
 	}
 }
