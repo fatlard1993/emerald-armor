@@ -21,12 +21,11 @@ import java.util.Map;
 public class Main implements ModInitializer {
 	public static final String MOD_ID = "emerald-armor-justfatlard";
 
-	// Repair material tag
 	private static final TagKey<Item> REPAIR_TAG = TagKey.create(
 		Registries.ITEM, Identifier.fromNamespaceAndPath(MOD_ID, "emerald_armor_repair_items")
 	);
 
-	// Emerald armor material: durability 37, defense between iron and diamond, toughness 2.0, enchantability 20
+	// Defense positioned between iron and diamond
 	public static final ArmorMaterial EMERALD_ARMOR_MATERIAL = new ArmorMaterial(
 		37,                                    // durability
 		Map.of(                                // defense per slot
@@ -43,17 +42,14 @@ public class Main implements ModInitializer {
 		EquipmentAssets.DIAMOND                // asset (visual fallback)
 	);
 
-	// Helper method to create registry key
 	private static ResourceKey<Item> keyOf(String name) {
 		return ResourceKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(MOD_ID, name));
 	}
 
-	// Creative tab key for combat
 	private static final ResourceKey<CreativeModeTab> COMBAT_TAB = ResourceKey.create(
 		Registries.CREATIVE_MODE_TAB, Identifier.fromNamespaceAndPath("minecraft", "combat")
 	);
 
-	// Armor items
 	public static final Item EMERALD_HELMET = new EmeraldArmorItem(
 		new Item.Properties()
 			.setId(keyOf("emerald_helmet"))
@@ -80,18 +76,15 @@ public class Main implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		// Register with Pandorical if available
 		if (PandoricalApi.isAvailable()) {
 			PandoricalApi.content().registerModAssets(MOD_ID);
 		}
 
-		// Register items
 		Registry.register(BuiltInRegistries.ITEM, keyOf("emerald_helmet"), EMERALD_HELMET);
 		Registry.register(BuiltInRegistries.ITEM, keyOf("emerald_chestplate"), EMERALD_CHESTPLATE);
 		Registry.register(BuiltInRegistries.ITEM, keyOf("emerald_leggings"), EMERALD_LEGGINGS);
 		Registry.register(BuiltInRegistries.ITEM, keyOf("emerald_boots"), EMERALD_BOOTS);
 
-		// Add armor to vanilla Combat creative tab
 		CreativeModeTabEvents.modifyOutputEvent(COMBAT_TAB).register(entries -> {
 			entries.accept(EMERALD_HELMET);
 			entries.accept(EMERALD_CHESTPLATE);

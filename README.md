@@ -1,11 +1,6 @@
 # Emerald Armor
 
-A Fabric mod for Minecraft 1.21.11 that adds armor made from emerald blocks.
-
-![Minecraft 1.21.11](https://img.shields.io/badge/Minecraft-1.21.11-green)
-![Fabric](https://img.shields.io/badge/Mod%20Loader-Fabric-blue)
-![Server-Side](https://img.shields.io/badge/Server--Side-Compatible-brightgreen)
-![License](https://img.shields.io/badge/License-MIT-yellow)
+A Fabric mod that adds armor made from emerald blocks.
 
 ## Features
 
@@ -37,28 +32,17 @@ Emerald armor is crafted from emerald blocks and is comparable to diamond armor 
 
 Standard armor crafting patterns using **Emerald Blocks** instead of ingots.
 
-## Installation
-
-1. Install [Fabric Loader](https://fabricmc.net/use/) for Minecraft 1.21.11
-2. Download and install [Fabric API](https://modrinth.com/mod/fabric-api)
-3. Download the latest release of Emerald Armor
-4. Place the jar file in your `mods` folder
-
-### Server-Side Installation
-
-This mod works on servers with vanilla clients! When installed on a server:
-- Vanilla clients will be prompted to download a resource pack
-- If accepted, they see custom armor textures
-- If declined, armor appears as dyed leather but stats still work
-
-Polymer is bundled with the mod - no additional downloads required.
-
 ## Requirements
 
-- Minecraft 1.21.11
-- Fabric Loader 0.18.0+
-- Fabric API
-- Polymer (bundled)
+Targets the Minecraft, Fabric Loader, Fabric API, and Java versions declared in this mod's `gradle.properties`; check there for the exact currently-supported version.
+
+## Pandorical
+
+Emerald Armor uses Pandorical to sync its custom item assets (textures) to clients. Pandorical is declared as a hard dependency in `fabric.mod.json`, so it must be installed on both server and client for this mod to load at all: there is no vanilla-client fallback. Armor stats and functionality are unaffected either way; Pandorical governs only how the armor is rendered.
+
+## Installation
+
+Install alongside its declared dependencies (see `fabric.mod.json`).
 
 ## License
 
