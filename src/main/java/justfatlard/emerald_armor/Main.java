@@ -1,5 +1,6 @@
 package justfatlard.emerald_armor;
 
+import justfatlard.pandorical.api.ItemRegistration;
 import justfatlard.pandorical.api.PandoricalApi;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.creativetab.v1.CreativeModeTabEvents;
@@ -77,6 +78,11 @@ public class Main implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		if (PandoricalApi.isAvailable()) {
+			for (String name : new String[] { "emerald_helmet", "emerald_chestplate", "emerald_leggings", "emerald_boots" }) {
+				PandoricalApi.content().registerItem(MOD_ID + ":" + name, new ItemRegistration()
+					.model(MOD_ID + ":item/" + name)
+					.maxStackSize(1));
+			}
 			PandoricalApi.content().registerModAssets(MOD_ID);
 		}
 
