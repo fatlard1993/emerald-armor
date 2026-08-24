@@ -40,7 +40,11 @@ public class Main implements ModInitializer {
 		2.0f,                                  // toughness
 		0.0f,                                  // knockback resistance
 		REPAIR_TAG,                            // repair ingredient
-		EquipmentAssets.DIAMOND                // asset (visual fallback)
+		// This mod's own equipment definition, which it has always shipped at
+		// assets/minecraft/equipment/emerald.json and never pointed at: the material named
+		// diamond's instead, so the armour on a wearer was diamond-coloured whatever the
+		// item in the slot looked like.
+		ResourceKey.create(EquipmentAssets.ROOT_ID, Identifier.withDefaultNamespace("emerald"))
 	);
 
 	private static ResourceKey<Item> keyOf(String name) {
