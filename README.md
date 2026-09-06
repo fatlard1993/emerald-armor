@@ -34,11 +34,11 @@ Standard armor crafting patterns using **Emerald Blocks** instead of ingots.
 
 ## Pandorical
 
-Emerald Armor uses Pandorical to sync its custom item assets (textures) to clients. Pandorical is declared as a hard dependency in `fabric.mod.json`, so it must be installed on both server and client for this mod to load at all: there is no vanilla-client fallback. Armor stats and functionality are unaffected either way; Pandorical governs only how the armor is rendered.
+Emerald Armor uses Pandorical to sync its custom item assets (textures) to clients. Pandorical is required on both the server and every client; there is no vanilla-client fallback. Armor stats and functionality are unaffected either way; Pandorical governs only how the armor is rendered.
 
-## Installation
+## Development
 
-Install server-side alongside its declared dependencies (see `fabric.mod.json`); connecting clients need only Pandorical. Version targets live in `gradle.properties` (Minecraft, loader, Fabric API) and `fabric.mod.json` (Java).
+Installing is in [DEVELOPMENT.md](DEVELOPMENT.md).
 
 ## License
 
