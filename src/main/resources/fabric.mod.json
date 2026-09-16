@@ -12,7 +12,7 @@
     "sources": ""
   },
   "license": "MIT",
-  "icon": "icon.png",
+  "icon": "assets/emerald-armor-justfatlard/icon.png",
   "environment": "*",
   "entrypoints": {
     "main": [
