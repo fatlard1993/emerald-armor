@@ -103,5 +103,11 @@ public class Main implements ModInitializer {
 		});
 
 		System.out.println("[emerald-armor] Loaded emerald-armor (server-side with Pandorical)");
+
+		// Guarded, and the guard is why the call sits behind its own class: naming a
+		// village-quests type here would load it whether or not that mod is installed.
+		if (net.fabricmc.loader.api.FabricLoader.getInstance().isModLoaded("village-quests-justfatlard")) {
+			justfatlard.emerald_armor.integration.EmeraldRemarks.register();
+		}
 	}
 }
