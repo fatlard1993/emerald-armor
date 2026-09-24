@@ -4,10 +4,13 @@
   ],
   "versions": {
     "2.0.1": [
-      "The village has remarks about somebody walking around in two hundred and sixteen emeralds. Standing cannot be bought, so the armorer, toolsmith, cleric and farmer are unmoved, and the armorer's honest defence of the stuff is the enchantability rather than the armour points."
+      "The village has remarks about somebody walking around in two hundred and sixteen emeralds.",
+      "Standing cannot be bought, so the armorer, toolsmith, cleric and farmer are unmoved.",
+      "The armorer's honest defence of the stuff is the enchantability, not the armour points."
     ],
     "2.0.0": [
-      "The full set, crafted from emerald blocks in the usual patterns, repairable with them, and sat in the Combat tab with the advancements that unlock each piece.",
+      "The full set, crafted from emerald blocks in the usual patterns and repairable with them.",
+      "In the Combat tab, with the advancements that unlock each piece.",
       "Worn armour renders properly on players, and the item tags load where they should so repair works."
     ]
   }
