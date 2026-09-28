@@ -11,7 +11,7 @@
     "2.0.0": [
       "The full set, crafted from emerald blocks in the usual patterns and repairable with them.",
       "In the Combat tab, with the advancements that unlock each piece.",
-      "Worn armour renders properly on players, and the item tags load where they should so repair works."
+      "Worn armour uses its own texture, and the item tags load so repair works."
     ]
   }
 }
