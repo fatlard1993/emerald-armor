@@ -3,6 +3,9 @@
     "Armor made out of emerald blocks: diamond's protection, a little more durability, and twice its enchantability."
   ],
   "versions": {
+    "2.0.2": [
+      "The mod menu icon matches the one on the download pages."
+    ],
     "2.0.1": [
       "The village has remarks about somebody walking around in two hundred and sixteen emeralds.",
       "Standing cannot be bought, so the armorer, toolsmith, cleric and farmer are unmoved.",
