@@ -42,21 +42,11 @@ Emerald Armor uses Pandorical to sync its custom item assets (textures) to clien
 
 ## What the village makes of it
 
-With [village-quests](../village-quests) installed, a village whose entire
-economy is emeralds gets to look at somebody wearing two hundred and sixteen of
-them, and is not moved. That mod's argument is that standing cannot be bought,
-so the most expensive thing anyone has ever worn through town buys exactly
-nothing, and nobody is rude about it either. They are tradespeople looking at a
-material.
+With [village-quests](https://github.com/fatlard1993/village-quests) installed, a village whose entire economy is emeralds gets to look at somebody wearing two hundred and sixteen of them, and is not moved. That mod's argument is that standing cannot be bought, so the most expensive thing anyone has ever worn through town buys exactly nothing, and nobody is rude about it either. They are tradespeople looking at a material.
 
-The armorer has priced it out and will tell you it stops what diamond stops, not
-a point more, and that the only honest reason to own it is that it takes an
-enchantment about twice as well. The cleric has buried people who owned less
-than one of your sleeves. The farmer's wheat does not care.
+The armorer has priced it out and will tell you it stops what diamond stops, not a point more, and that the only honest reason to own it is that it takes an enchantment about twice as well. The cleric has buried people who owned less than one of your sleeves. The farmer's wheat does not care.
 
-Emerald tools are noticed too, by registry id, so the toolsmith has something to
-say when one is in your hand and nothing to say when [emerald-tools](../emerald-tools)
-is not installed.
+Emerald tools are noticed too, by registry id, so the toolsmith has something to say when one is in your hand and nothing to say when [emerald-tools](https://github.com/fatlard1993/emerald-tools) is not installed.
 
 ## Development
 
