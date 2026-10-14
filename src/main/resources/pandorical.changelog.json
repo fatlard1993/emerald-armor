@@ -3,6 +3,9 @@
     "Armor made out of emerald blocks: diamond's protection, a little more durability, and twice its enchantability."
   ],
   "versions": {
+    "2.0.3": [
+      "Release notes rewritten to read plainly; nothing in play changes."
+    ],
     "2.0.2": [
       "The mod menu icon matches the one on the download pages."
     ],
