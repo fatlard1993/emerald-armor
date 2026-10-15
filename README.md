@@ -38,7 +38,7 @@ Standard armor crafting patterns using **Emerald Blocks** instead of ingots.
 
 ## Pandorical
 
-Emerald Armor uses Pandorical to sync its custom item assets (textures) to clients. Pandorical is required on both the server and every client; there is no vanilla-client fallback. Armor stats and functionality are unaffected either way; Pandorical governs only how the armor is rendered.
+Emerald Armor goes on the server only, and **Pandorical is required there and on every player's client**: the armor pieces are new items, and a client without Pandorical has no entry for them.
 
 ## What the village makes of it
 
