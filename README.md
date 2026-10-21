@@ -26,6 +26,7 @@ Emerald armor is crafted from emerald blocks and is comparable to diamond armor 
 - Repairable with emerald blocks
 - Added to the vanilla Combat creative tab
 - Crafted from emerald blocks (expensive but renewable via villager trading)
+- Takes armor trims at the smithing table, shown on the icon as well as when worn
 
 ## Screenshots
 

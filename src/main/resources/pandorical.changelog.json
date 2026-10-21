@@ -3,6 +3,9 @@
     "Armor made out of emerald blocks: diamond's protection, a little more durability, and twice its enchantability."
   ],
   "versions": {
+    "2.1.0": [
+      "Emerald armor takes armor trims at the smithing table, and the trim shows on the icon as well as when worn."
+    ],
     "2.0.3": [
       "Release notes rewritten to read plainly; nothing in play changes."
     ],
