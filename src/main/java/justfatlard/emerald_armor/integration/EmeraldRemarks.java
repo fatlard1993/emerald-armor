@@ -140,8 +140,8 @@ public final class EmeraldRemarks {
 
 		topics("toolsmith", List.of(
 			new Topic("ea_tool", 0, true, "Have you seen one of these before?", worn ->
-				node("Once or twice. Cuts a little quicker than diamond, lasts a little longer, hits a little harder. "
-						+ "Every one of those is a little.",
+				node("Once or twice. Cuts like diamond, hits like diamond. Lasts longer, I will give it that, "
+						+ "but a longer life doing the same work is still the same work.",
 					"It does the job.",
 					then("So it's not worth making?",
 						close("I did not say that. Put it on the table and it takes an enchantment like nothing else you will "

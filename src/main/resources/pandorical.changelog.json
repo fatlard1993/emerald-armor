@@ -3,6 +3,9 @@
     "Armor made out of emerald blocks: diamond's protection, a little more durability, and twice its enchantability."
   ],
   "versions": {
+    "2.1.1": [
+      "The toolsmith's remark about emerald tools matches what they do now: they cut and hit like diamond and last longer."
+    ],
     "2.1.0": [
       "Emerald armor takes armor trims at the smithing table, and the trim shows on the icon as well as when worn."
     ],

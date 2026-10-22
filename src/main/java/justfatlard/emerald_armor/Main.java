@@ -26,7 +26,7 @@ public class Main implements ModInitializer {
 		Registries.ITEM, Identifier.fromNamespaceAndPath(MOD_ID, "emerald_armor_repair_items")
 	);
 
-	// Defense positioned between iron and diamond
+	// Diamond's defense, netherite's durability, double diamond's enchantability
 	public static final ArmorMaterial EMERALD_ARMOR_MATERIAL = new ArmorMaterial(
 		37,                                    // durability
 		Map.of(                                // defense per slot
