@@ -3,20 +3,11 @@
     "Armor made out of emerald blocks: diamond's protection, a little more durability, and twice its enchantability."
   ],
   "versions": {
-    "2.1.2": [
-      "Names Village Quests as an optional companion, so launchers and download pages know they go together."
-    ],
     "2.1.1": [
       "The toolsmith's remark about emerald tools matches what they do now: they cut and hit like diamond and last longer."
     ],
     "2.1.0": [
       "Emerald armor takes armor trims at the smithing table, and the trim shows on the icon as well as when worn."
-    ],
-    "2.0.3": [
-      "Release notes rewritten to read plainly; nothing in play changes."
-    ],
-    "2.0.2": [
-      "The mod menu icon matches the one on the download pages."
     ],
     "2.0.1": [
       "The village has remarks about somebody walking around in two hundred and sixteen emeralds.",
