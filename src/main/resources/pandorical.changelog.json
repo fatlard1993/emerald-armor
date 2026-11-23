@@ -3,6 +3,9 @@
     "Armor made out of emerald blocks: diamond's protection, a little more durability, and twice its enchantability."
   ],
   "versions": {
+    "2.1.5": [
+      "Describes itself in one short line of what it adds."
+    ],
     "2.1.4": [
       "A demo to play in PvP Dimensions' onboarding."
     ],
